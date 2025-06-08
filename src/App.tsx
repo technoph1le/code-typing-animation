@@ -56,9 +56,11 @@ greet("Techno");
             id="languages"
             onChange={(e) => setCodeLanguage(e.target.value)}
           >
+            <option value="javascript">JavaScript</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
-            <option value="javascript">JavaScript</option>
+            <option value="md">Markdown</option>
+            <option value="bash">Terminal</option>
           </select>
         </div>
       </section>
