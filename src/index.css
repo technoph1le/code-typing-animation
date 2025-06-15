@@ -32,20 +32,13 @@ main {
 }
 
 .code-editor {
-  position: relative;
-  overflow: auto;
   width: 100%;
   height: 100%;
 }
 
-.code-editor__syntax-highlighter,
 .code-editor__textarea {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  padding: 1em;
   margin: 0;
   font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono",
     monospace;
@@ -61,11 +54,9 @@ main {
 /* https://stackoverflow.com/questions/37862843/show-just-cursor-caret-but-hide-the-letters-in-input */
 .code-editor__textarea {
   z-index: 1;
-  /* opacity: 0; */
-  color: cyan; /* sets the color of both caret and text */
-  -webkit-text-fill-color: transparent; /* sets just the text color */
-
   background: transparent;
+  color-scheme: dark;
+
   border: 0;
   outline: none;
   resize: none;
