@@ -44,11 +44,7 @@ greet("Techno");
   return (
     <main>
       <section className="code-editor-wrapper">
-        <CodeEditor
-          codeLanguage={codeLanguage}
-          rawCode={rawCode}
-          setRawCode={setRawCode}
-        />
+        <CodeEditor rawCode={rawCode} setRawCode={setRawCode} />
         <div className="button-group button-group--left">
           <select
             className="select"
