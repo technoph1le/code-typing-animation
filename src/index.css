@@ -51,7 +51,6 @@ main {
   overflow: hidden;
 }
 
-/* https://stackoverflow.com/questions/37862843/show-just-cursor-caret-but-hide-the-letters-in-input */
 .code-editor__textarea {
   z-index: 1;
   background: transparent;

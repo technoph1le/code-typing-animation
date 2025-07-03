@@ -57,6 +57,7 @@ greet("Techno");
             <option value="css">CSS</option>
             <option value="md">Markdown</option>
             <option value="bash">Terminal</option>
+            <option value="py">Python</option>
           </select>
         </div>
       </section>
