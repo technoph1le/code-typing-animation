@@ -2,6 +2,23 @@ import { useState } from "react";
 import TypistAnimation from "./components/TypistAnimation";
 import CodeEditor from "./components/CodeEditor";
 
+const languages = [
+  "javascript",
+  "html",
+  "css",
+  "md",
+  "bash",
+  "python",
+  "c",
+  "cpp",
+  "sql",
+  "java",
+  "visual-basic",
+  "assembly",
+  "typescript",
+  "php",
+];
+
 function App() {
   const [restartKey, setRestartKey] = useState(false);
   const [isFullScreen, setIsFullScreen] = useState(document.fullscreenElement);
@@ -52,12 +69,11 @@ greet("Techno");
             id="languages"
             onChange={(e) => setCodeLanguage(e.target.value)}
           >
-            <option value="javascript">JavaScript</option>
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="md">Markdown</option>
-            <option value="bash">Terminal</option>
-            <option value="py">Python</option>
+            {languages.map((lang) => (
+              <option key={lang} value={lang}>
+                {lang}
+              </option>
+            ))}
           </select>
         </div>
       </section>
