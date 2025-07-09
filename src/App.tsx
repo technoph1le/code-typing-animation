@@ -14,7 +14,7 @@ const languages = [
   "sql",
   "java",
   "visual-basic",
-  "assembly",
+  "asm6502",
   "typescript",
   "php",
 ];
